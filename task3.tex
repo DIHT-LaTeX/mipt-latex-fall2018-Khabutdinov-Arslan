@@ -1,0 +1,163 @@
+\documentclass[30pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{tabularx}
+\usepackage{mathtools}
+\usepackage[export]{adjustbox}
+\newcolumntype{L}[1]{>{\hsize=#1\hsize%
+\raggedright\arraybackslash}X}%
+\newcolumntype{R}[1]{>{\hsize=#1\hsize%
+\raggedleft\arraybackslash}X}%
+\newcolumntype{C}[1]{>{\hsize=#1\hsize%
+\centering\arraybackslash}X}
+\usepackage[
+labelfont = bf,
+textfont = rm,
+margin = 0pt]{caption}
+\usepackage{subcaption}
+\captionsetup[subfigure]{labelformat=empty}
+\usepackage[
+a5paper,
+left = 1 cm,
+right = 1 cm,
+top = 1 cm,
+bottom = 2 cm,
+]{geometry}
+
+\title{Домашняя работа №3}
+\author{Хабутдинов Арслан}
+\date{}
+
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+
+\begin{document}
+    \section{Уран}
+        Уран~--- седьмая по удаленности от Солнца планета солнечной системы. Как и Нептун, она относится к классу ледяных гигантов. Её ядро состоит из нагретого льда. Как и у газовых гигантов, у Урана есть спутники и кольца. 
+        \begin{wrapfigure}[13]{r}[0cm]{0.3\textwidth} 
+            \includegraphics[width = 0.23\textwidth]{Hershel}
+            \centering
+            \caption{У. Гершель}
+            \label{pic:hershel}
+        \end{wrapfigure}\\
+        Планету наблюдали очень давно, но принимали её за звезду. По--настоящему открыть её удалось лишь Уильяму Гершелю (он изображен на рисунке~\ref{pic:hershel}). 13 марта 1781 года Гершель увидел ее через телескоп собственной конструкции, находясь в саду своего дома в Англии. Поначалу он принял ее за комету, но исходя из расчетов Андрея Ивановича Лекселя, таковой объект быть не мог в силу большого перигелейного расстояния. За свои заслуги Гершель получил от короля Георга III пожизненную стипендию в 200 фунтов стерлингов.
+        \begin{figure}[h!]
+            \centering
+            \begin{subfigure}[b]{0.30\textwidth}
+                \includegraphics[width = \textwidth]{Uranus}
+                \caption{Вид спереди}
+            \end{subfigure}
+            \begin{subfigure}[b]{0.30\textwidth}
+                \includegraphics[width = \textwidth]{Uranus}
+                \caption{Вид сзади}
+            \end{subfigure}
+            \begin{subfigure}[b]{0.30\textwidth}
+                \includegraphics[width = \textwidth]{Uranus}
+                \caption{Вид снизу}
+            \end{subfigure}
+            \caption{Изображения, полученные Voyager 2}
+            \label{pic:planet}
+        \end{figure}\\\\
+        Первые фотографии планеты были получены в 1986 году аппаратом "Voyager 2". Из них был склеен рисунок~\ref{pic:planet}. На них видна блеклая планета, без облачных полос и атмосферных штормов. Однако в настоящее время удалось различить признаки изменений погоды и сезонов. 
+    \section{Спутники}
+        \begin{figure}[h!]
+            \centering
+            \includegraphics[width = 0.5\textwidth]{Moons}
+            \caption{Крупнейшие спутники Урана}
+            \label{pic:moons}
+        \end{figure}
+        Как и другие планеты-гиганты, Уран обладает многочисленными спутниками (крупнейшие из них видны на рисунке~\ref{pic:moons}). Всего их 27 штук (информация об основных указана в таблице~\ref{tbl:moons}). Шекспира и Александра Поупа. Первые два спутника~--- Титанию и Оберон открыл еще Гершель. Ариэль и Умбриэль были обнаружены Уильямом Ласселом в 1851 году, в 1948 Джерард Койпер открыл Миранду. Об остальных стало известно лишь в конце XX века благодаря "Voyager 2" и мощным наземным телескопам.\\
+        Первые спутники называли в честь персонажей пьес Шекспира и поэмы Поупа "Похищение локона". Позднее международным астрономическим союзом было принято соглашение называть спутники Урана лишь именами героев этих произведений.\\
+        \begin{table}[h!]
+            \begin{tabularx}{\textwidth}{
+        |C{0.15}|C{0.24}|C{0.2}|C{0.22}|C{0.17}| }
+                \hline
+                \textbf{Название} & \textbf{Диаметр (км)} & \textbf{Масса (кг)} & \bfseries{Период обращения} & \bfseries{Год открытия}\\
+                \hline 
+                Корделия & 42 & $5.0\times10^{16}$ & 0.335034 & 1986 \\
+                \hline
+                Офелия & 46 & $5.1\times10^{16}$ & 0.376400 & 1986 \\
+                \hline
+                Бианка & 54 & $9.2\times10^{16}$ & 0.434579 & 1986 \\
+                \hline
+                Крессида & 82 & $3.4\times10^{17}$ & 0.463570 & 1986 \\
+                \hline
+                Дездемона & 68 & $2.3\times10^{17}$ & 0.473650 & 1986 \\
+                \hline
+                Джульетта & 106 & $8.2\times10^{17}$ & 0.493065 & 1986 \\
+                \hline
+                Порция & 140 & $1.7\times10^{18}$ & 0.513196 & 1986 \\
+                \hline
+                Розалинда & 72 & $2.5\times10^{17}$ & 0.558460 & 1986 \\
+                \hline
+                Купидон & 18 & $3.8\times10^15$ & 0.618 & 2003 \\
+                \hline
+                Белинда & 90 & $4.9\times10^{17}$ & 0.623527 & 1986 \\
+                \hline
+                Пердита & 30 & $1.8\times10^{16}$ & 0.638 & 1986 \\
+                \hline
+                Пак & 162 & $2.9\times10^{18}$ & 0.761833 & 1985 \\
+                \hline
+                Маб & 25 & $1.0\times10^{16}$ & 0.923 & 2003 \\
+                \hline
+            \end{tabularx}
+            \caption{Основные данные крупнейших спутников Урана\label{tbl:moons}}
+        \end{table}
+    \section{Интегрируй!}
+        \begin{equation}
+            f(x) = \begin{cases}
+                \sqrt{\cos{x}} & 0 \leqslant \frac{-\pi}{2} \leqslant 0 \\
+                \frac{1}{\sqrt{1 + x}} & 0 \leqslant x \leqslant 3 \\
+                \frac{13}{14}x - \frac{32}{14} & 3 \leqslant x \leqslant 10 \\
+                (x - 7)^2 & 10 \leqslant  11 \\
+                x + 5 & 11 \leqslant x \leqslant 12 \\
+            \end{cases}
+            \label{eq:f}
+        \end{equation}
+        Проинтегрируем функцию \ref{eq:f} на отрезке $[0;12]$. Для этого просуммируем значения первообразных по всем отрезкам. Чтобы их вычислить, воспользуемся формулой Ньютона-Лейбница. Подробные выкладки представлены в формуле \ref{eq:res}. 
+        \begin{multline}
+            \int \limits_{0}^{12} f(x)\,dx = \sum \limits_{i = 1}^{5} F(b_i) - F(a_i) = \sin(x)\bigg|_{-\frac{\pi}{2}}^{0} + 2 \sqrt{1 + x}\bigg|_{0}^{3} + \bigg(\frac{13}{28}x^2 - \frac{13}{14}x\bigg)\bigg|_{3}^{10} + \\
+            + (x^3 - 7x ^ 2 + 49x)\bigg|_{10}^{11} + (x + 5)\bigg|_{11}^{12} =  \sin(0) - \sin\bigg(-\frac{\pi}{2}\bigg) + 2 * \sqrt{1 + 3} - \\
+            -2 * \sqrt{1 + 1} + \frac{13}{28} * 10^2 - \frac{32}{14}*10 - \frac{13}{28} * 3^2 + \frac{32}{14} * 3 + \frac{11^3}{2} - 7 * 11^2 + 49 * 11 - \frac{10^3}{2} + \\
+            + 7 * 10^2 - 49 * 10 + \frac{12^2}{2} + 5 * 12 - \frac{11^2}{2} - 5 * 11 = 1 - 0 + 8 - 2 + \frac{325}{7} - \frac{160}{7} - \frac{117}{28} + \\
+            + \frac{48}{7} + \frac{1331}{2} - 847 + 539 - 500 + 700 - 490 + 72 + 60 - \frac{121}{2} - 55 = \frac{469}{4}
+            \label{eq:res}
+        \end{multline}
+    \section{Затмения}
+        Затмение~--- астрономическая ситуация, при которой одно небесное тело заслоняет свет от другого небесного тела. Наиболее известными из них являются солнечные и лунные затмения. Они и другие основные виды представлены на иллюстрации \ref{pic:eclipses}.\\
+        В древности простые люди связывали затмения с негативными явлениями и боялись их. Ученым же затмения помогали в изучении небесной механики. Аристотель впервые указал на то, что Земля шарообразная, потому что форма тени Луны при затмении округлая. Ломоносов же, наблюдая в 1761 году прохождение Венеры по диску Солнца, открыл атмосферу Венеры,  обнаружив преломление солнечных лучей при вхождении и выходе Венеры с солнечного диска.
+        \begin{figure}[p]
+            \centering
+            \begin{subfigure}[b]{0.45\textwidth}
+                \includegraphics[width = \textwidth]{Solar_eclipse}
+                \caption{Солнечное затмение}
+            \end{subfigure}
+            \begin{subfigure}[b]{0.45\textwidth}
+                \includegraphics[width = \textwidth]{Lunar_eclipse}
+                \caption{Лунное затмение}
+            \end{subfigure}\\
+            \begin{subfigure}[b]{0.45\textwidth}
+                \includegraphics[width = \textwidth]{Full_eclipse}
+                \caption{Полное затмение}
+            \end{subfigure}
+            \begin{subfigure}[b]{0.45\textwidth}
+                \includegraphics[width = \textwidth]{Partial_eclipse}
+                \caption{Частичное затмение}
+            \end{subfigure}\\
+            \begin{subfigure}[b]{0.45\textwidth}
+                \includegraphics[width = \textwidth]{Half-shade_eclipse}
+                \caption{Полутеневое затмение}
+            \end{subfigure}
+            \begin{subfigure}[b]{0.45\textwidth}
+                \includegraphics[width = \textwidth]{Circular_eclipse}
+                \caption{Кольцевое затмение}
+            \end{subfigure}\\
+            \caption{Виды затмений}
+            \label{pic:eclipses}
+            
+        \end{figure}\\
+\end{document}
+ 
