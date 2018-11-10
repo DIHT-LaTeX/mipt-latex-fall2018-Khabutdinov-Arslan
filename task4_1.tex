@@ -2,18 +2,16 @@
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
 \usepackage{tikz}
-\usepackage[width = 190mm, height = 280mm, left = 0mm, top = 0mm, bottom = 0mm, right = 0mm]{geometry}
+\usepackage[width = 190mm, height = 280mm, left = 10mm, top = 10mm, bottom = 10mm, right = 10mm]{geometry}
 
 \thispagestyle{empty}
-\newcommand{\gridwidth}{220mm}
-\newcommand{\gridheight}{278.7mm}
+\newcommand{\gridwidth}{185mm}
+\newcommand{\gridheight}{259mm}
 
 \begin{document}
     \begin{tikzpicture}
-        \hspace*{-1cm}
-        \draw[step = 1mm, red, line width = 0.1mm] (0mm, 0mm) grid (\gridwidth, \gridheight);
-        \draw[step = 5mm, red, line width = 0.3mm] (0mm, 0mm) grid (\gridwidth, \gridheight);
-        \draw[step = 10mm, red, line width = 0.5mm] (0mm, 0mm) grid (\gridwidth, \gridheight);
+        \draw[step = 1mm, pink, line width = 0.2pt] (0mm, 0mm) grid (\gridwidth, \gridheight);
+        \draw[step = 5mm, pink, line width = 0.3pt] (0mm, 0mm) grid (\gridwidth, \gridheight);
+        \draw[step = 10mm, pink, line width = 0.5pt] (0mm, 0mm) grid (\gridwidth, \gridheight);
     \end{tikzpicture}
-    \hspace*{-1cm}
 \end{document}
