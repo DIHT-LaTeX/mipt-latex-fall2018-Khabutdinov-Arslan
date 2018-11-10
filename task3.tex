@@ -129,10 +129,10 @@ bottom = 2 cm,
             \end{cases}
             \label{eq:d}
         \end{equation}
-        Проинтегрируем функцию~\eqref{eq:f} на отрезке $[0;12]$. Для этого просуммируем значения первообразных по всем отрезкам. Чтобы их вычислить, воспользуемся формулой Ньютона-Лейбница. Подробные выкладки представлены в формуле~\eqref{eq:res}. 
+        Проинтегрируем функцию~\eqref{eq:f} на отрезке $[0,\,12]$. Для этого просуммируем значения первообразных по всем отрезкам. Чтобы их вычислить, воспользуемся формулой Ньютона-Лейбница. Подробные выкладки представлены в формуле~\eqref{eq:res}. 
         \begin{multline}
-            \int \limits_{0}^{12} f(x)\,dx = \sum \limits_{i = 1}^{5} F(b_i) - F(a_i) = \sin(x)\left. \right|_{-\frac{\pi}{2}}^{0} + 2 \sqrt{1 + x}\left. \right|_{0}^{3} + \bigg(\frac{17}{28}x^2 - \frac{44}{14}x\bigg)\left. \right|_{3}^{10} + \\
-            + (x^3 - 7x ^ 2 + 49x)\left. \right|_{10}^{11} + (x + 5)\left. \right|_{11}^{12} =  \sin(0) - \sin\bigg(-\frac{\pi}{2}\bigg) + 2 \cdot \sqrt{1 + 3} - \\
+            \int \limits_{0}^{12} f(x)\,dx = \sum \limits_{i = 1}^{5} F(b_i) - F(a_i) = \left. (\sin(x)) \right|_{-\frac{\pi}{2}}^{0} + 2 \left. (\sqrt{1 + x}) \right|_{0}^{3} + \bigg(\frac{17}{28}x^2 - \left. \frac{44}{14}x\bigg) \right|_{3}^{10} + \\
+            + \left. (x^3 - 7x ^ 2 + 49x) \right|_{10}^{11} + \left. (x + 5) \right|_{11}^{12} =  \sin(0) - \sin\bigg(-\frac{\pi}{2}\bigg) + 2 \cdot \sqrt{1 + 3} - \\
             -2 \cdot \sqrt{1 + 1} + \frac{17}{28} \cdot 10^2 - \frac{44}{14} \cdot 10 - \frac{17}{28} \cdot 3^2 + \frac{44}{14} \cdot 3 + \frac{11^3}{2} - 7 \cdot 11^2 + 49 \cdot 11 - \frac{10^3}{2} + \\
             + 7 \cdot 10^2 - 49 \cdot 10 + \frac{12^2}{2} + 5 \cdot 12 - \frac{11^2}{2} - 5 \cdot 11 = 1 - 0 + 8 - 2 + \frac{425}{7} - \frac{220}{7} - \frac{153}{28} + \\
             + \frac{66}{7} + \frac{1331}{2} - 847 + 539 - 500 + 700 - 490 + 72 + 60 - \frac{121}{2} - 55 = \frac{497}{4}
