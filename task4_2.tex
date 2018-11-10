@@ -1,45 +1,17 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
-\usepackage[a5paper, left = 1cm, right = 1cm, bottom = 2cm, top = 2cm]{geometry}
 \usepackage[russian]{babel}
-\usepackage[T2A]{fontenc}
 \usepackage{tikz}
-\usepackage{pgfplots}
-\usepackage{listings}
-\usepackage{fancyhdr}
+\usepackage[width = 190mm, height = 280mm, left = 10mm, top = 10mm, bottom = 10mm, right = 10mm]{geometry}
 
-\pagestyle{empty}
-\lstset{ 
-	backgroundcolor = \color{white},   
-	basicstyle = \scriptsize\ttfamily, 
-	frame = single,	                 
-	keywordstyle = \color{blue},       
-	language = Python,
-	numbers = left,                    
-	numbersep = 5pt,                   
-	numberstyle = \tiny \ttfamily \color{black}, 
-	stringstyle = \color{red},
-	tabsize = 2
-}
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[L]{\textit{Долгопрудный}}
-\fancyhead[C]{\large{\textbf{Числа и картинки}}}
-\fancyhead[R]{\textit{09.11.18}}
-\fancyfoot[R]{\textcopyright Арслан Хабутдинов}
+\thispagestyle{empty}
+\newcommand{\gridwidth}{185mm}
+\newcommand{\gridheight}{259mm}
 
 \begin{document}
-    \par Код на питоне, который рисует красивую (или не очень картинку), и, вместе с тем, сам по себе очень даже ничего. Он демонстрирует невероятную простоту и универсательность этого  популярного языка программирования.
-    \lstinputlisting[language = Python]{gen.py}
-    \par А вот и красивая картинка, которую этот код рисует. Тут есть точечки и приближающая их прямая. Говорят, есть какие-то ряды Тейлора, которые позволяют приблизить точнее, но тогда на картинке уже не прямая получится.
-    \center{
-        \resizebox{0.5\textwidth}{!}{
-            \begin{tikzpicture}
-                \begin{axis}
-                    \addplot+ [x = x, y = y, only marks, mark size = 1pt] table{data.dat};
-                    \addplot[no marks, domain = -10:10, green, line width = 2pt]{3.0612*x + 2.6882};
-                \end{axis}
-            \end{tikzpicture}
-        }
-    }
+    \begin{tikzpicture}
+        \draw[step = 1mm, pink, line width = 0.2pt] (0mm, 0mm) grid (\gridwidth, \gridheight);
+        \draw[step = 5mm, pink, line width = 0.3pt] (0mm, 0mm) grid (\gridwidth, \gridheight);
+        \draw[step = 10mm, pink, line width = 0.5pt] (0mm, 0mm) grid (\gridwidth, \gridheight);
+    \end{tikzpicture}
 \end{document}
